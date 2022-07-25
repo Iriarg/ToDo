@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="container">
-        <header class="text-center text-light my-4">
-            <h2 class="mb-4">Summer calendar</h2>
-            <form class="search">
-                <input type="text" class="form-control" name="search" placeholder="Search TO DOs...">
-            </form>
-        </header>
-        <ul class="list-group text-light to-dos">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>ATBO debut: 27 de julio</span>
-                <i class="far fa-trash-alt delete"></i>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>The-B Zone - Seoul: 7 de agosto</span>
-                <i class="far fa-trash-alt delete"></i>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>The Boyz comeback: 16 de agosto</span>
-                <i class="far fa-trash-alt delete"></i>
-            </li>
-        </ul>
-        <form class="add text-center my-4">
-            <label for="" class="text-light">Add a new schedule:</label>
-            <input type="text" class="form-control" name="add">
-        </form>
-    </div>
 
-    <script src="app.js"></script>
+<body>
+	<div class="principal">
+		<div class="wrap">
+			<form class="formulario" action="">
+				<input type="text" id="tareaInput" placeholder="add schedule">
+				<input type="button" class="boton" id="btn-agregar" value="add schedule">
+			</form>
+		</div>
+	</div>
+
+	<div class="tareas">
+		<div class="wrap">
+			<ul class="lista" id="lista">
+				<li><a href="#">07/27 ATBO debut</a></li>
+				<li><a href="#">08/07 The-B Zone - Seoul</a></li>
+				<li><a href="#">08/16 The Boyz comeback</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="/app.js"></script>
 </body>
 </html>
