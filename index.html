@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h2 class="mb-4">Summer calendar</h2>
+            <form class="search">
+                <input type="text" class="form-control" name="search" placeholder="Search TO DOs...">
+            </form>
+        </header>
+        <ul class="list-group text-light to-dos">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>ATBO debut: 27 de julio</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>The-B Zone - Seoul: 7 de agosto</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>The Boyz comeback: 16 de agosto</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+        </ul>
+        <form class="add text-center my-4">
+            <label for="" class="text-light">Add a new schedule:</label>
+            <input type="text" class="form-control" name="add">
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
